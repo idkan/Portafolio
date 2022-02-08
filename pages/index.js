@@ -12,7 +12,7 @@ export default function Home() {
 			<div className="flex flex-col h-screen justify-between">
 				<header className="h-10 bg-red-500"></header>
 				<main className="mb-auto h-10 bg-green-500">
-					<h1 className="text-3xl font-bold underline">
+					<h1 className="text-3xl font-bold underline text-primary">
 						Hello world!
 					</h1>
 				</main>
