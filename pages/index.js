@@ -7,6 +7,7 @@ export default function Home() {
 				<title>Abraham SWE</title>
 				<meta name="description" content="Abraham SWE Portfolio" />
 				<link rel="icon" href="/favicon.ico" />
+				<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 			</Head>
 			<div className="flex flex-col h-screen justify-between">
 				<header className="h-10 bg-red-500"></header>
