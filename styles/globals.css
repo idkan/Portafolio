@@ -7,16 +7,8 @@
 #docs-root {
     --hue-color: 204;
 
-    --first-color: hsl(var(--hue-color), 88%, 53%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 90%);
-    --container-color: #ffffff;
+    --primary-color: hsl(var(--hue-color), 88%, 53%);
+    --secondary-color: hsl(var(--hue-color), 66%, 61%);
 }
 
 * {
