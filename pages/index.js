@@ -10,8 +10,8 @@ const Home = () => {
 				<div className="max-w-5xl mx-auto grip">
 					<div className="grid  mb-4">
 						<div className="home__social flex items-center justify-start">
-							<a href="https://www.linkedin.com/in/abraham-serena/" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-3xl" /></a>
-							<a href="https://github.com/idkan" target="_blank" rel="noopener noreferrer"><FiGithub className="text-3xl" /></a>
+							<a href="https://www.linkedin.com/in/abraham-serena/" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-xl" /></a>
+							<a href="https://github.com/idkan" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl" /></a>
 						</div>
 						<div className="home__img">
 							<svg viewBox="0 0 200 187" className="w-96 h-72 m-auto">
