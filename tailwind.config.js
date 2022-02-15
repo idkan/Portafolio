@@ -15,7 +15,10 @@ module.exports = {
 			gridTemplateColumns: {
 				'home-social': 'max-content',
 				'home-content': '.5fr 3fr',
-			  }
+			},
+			gridColumn: {
+				'span-1/3': '1/3',
+			}
 		},
 	},
 	plugins: [],
