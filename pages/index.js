@@ -1,17 +1,18 @@
 import Layout from "../components/Layout";
 
-import { FiLinkedin, FiGithub, FiSend } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram, FiSend } from "react-icons/fi";
 import { BsMouse, BsArrowDown } from "react-icons/bs";
 
 const Home = () => {
 	return (
 		<Layout>
 			<section id="home" className="pt-8 px-4 pb-16">
-				<div className="max-w-5xl mx-auto grip">
-					<div className="grid  mb-4">
-						<div className="home__social flex items-center justify-start">
+				<div className="max-w-5xl mx-auto grip gap-4">
+					<div className="grid grid-cols-home-content pt-14 items-center mb-4">
+						<div className="grid grid-cols-home-social gap-y-4">
 							<a href="https://www.linkedin.com/in/abraham-serena/" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-xl" /></a>
-							<a href="https://github.com/idkan" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl" /></a>
+							<a href="https://github.com/idkan/" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl" /></a>
+							<a href="https://www.instagram.com/abraham_salk/" target="_blank" rel="noopener noreferrer"><FiInstagram className="text-xl" /></a>
 						</div>
 						<div className="home__img">
 							<svg viewBox="0 0 200 187" className="w-96 h-72 m-auto">
