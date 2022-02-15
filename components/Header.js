@@ -22,7 +22,7 @@ const Navbar = () => {
                         <li onClick={toggleNavMenu}><a href="#blog" className="flex flex-col items-center text-sm font-medium hover:text-primary"><FiBook size={20} />Blog</a></li>
                         <li onClick={toggleNavMenu}><a href="#contact" className="flex flex-col items-center text-sm font-medium hover:text-primary"><FiMessageSquare size={20} />Contact</a></li>
                     </ul>
-                    <FiX id="nav-close" className="absolute right-5 bottom-2 text-2xl cursor-pointer text-primary hover:text-black" onClick={toggleNavMenu}/>
+                    <FiX id="nav-close" className="absolute right-5 bottom-2 text-2xl cursor-pointer text-primary hover:text-black" onClick={toggleNavMenu} />
                 </div>
                 <div>
                     <div id="nav-toggle" className="font-bold text-lg cursor-pointer hover:text-primary" onClick={toggleNavMenu}>
