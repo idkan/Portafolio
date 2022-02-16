@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,10 +7,17 @@
 :root,
 #root,
 #docs-root {
-    --hue-color: 204;
+    --main-color: 204;
 
-    --primary-color: hsl(var(--hue-color), 88%, 53%);
-    --secondary-color: hsl(var(--hue-color), 66%, 61%);
+    --first-color: hsl(var(--main-color), 69%, 61%);
+    --second-color: hsl(var(--main-color), 69%, 61%);
+    --first-color-alt: hsl(var(--main-color), 57%, 53%);
+    --first-color-light: hsl(var(--main-color), 92%, 85%);
+    --title-color: hsl(var(--main-color), 8%, 15%);
+    --text-color: hsl(var(--main-color), 8%, 45%);
+    --text-color-light: hsl(var(--main-color), 8%, 65%);
+    --input-color: hsl(var(--main-color), 70%, 96%);
+    --body-color: hsl(var(--main-color), 60%, 99%);
 }
 
 * {
@@ -24,6 +31,30 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    margin: 0 0 3rem 0;
+    font-family: "Poppins", sans-serif;
     font-size: 0.938rem;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

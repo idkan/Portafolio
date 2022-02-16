@@ -6,18 +6,25 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				Poppins: ["Poppins", "sans-serif"],
+				"Poppins": ["Poppins", "sans-serif"],
 			},
 			colors: {
-				primary: "var(--primary-color)",
-				secondary: "var(--secondary-color)",
+				"primary": "var(--first-color)",
+				"primary-alt": "var(--first-color-alt)",
+				"primary-light": "var(--first-color-light)",
+				"secondary": "var(--second-color)",
+				"title": "var(--title-color)",
+				"text": "var(--text-color)",
+				"text-light": "var(--text-color-light)",
+				"input": "var(--input-color)",
+				"body": "var(--body-color)",
 			},
 			gridTemplateColumns: {
-				'home-social': 'max-content',
-				'home-content': '.5fr 3fr',
+				"home-social": "max-content",
+				"home-content": ".5fr 3fr",
 			},
 			gridColumn: {
-				'span-1/3': '1/3',
+				"span-1/3": "1/3",
 			}
 		},
 	},
