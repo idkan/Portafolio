@@ -29,11 +29,11 @@ const Home = () => {
 							<h1 className="text-3xl font-bold" >Hi, I'm Abraham!</h1>
 							<h3 className="text-xl font-light text-gray-500 mb-3">I'm a Software Engineer</h3>
 							<p className="text-base mb-8">I'm a full stack developer with a passion for building web applications. I have a strong background in web development and have worked with a wide range of technologies.</p>
-							<a href="#contact" className="flex items-center text-secondary">Let's talk <FiSend className="ml-1" /></a>
+							<a href="#contact" className="inline-flex items-center bg-primary text-white p-4 rounded-lg font-medium hover:bg-blue-400">Let's talk <FiSend className="text-xl ml-2 duration-300" /></a>
 						</div>
 					</div>
 					<div className="text-secondary">
-						<a href="#about" className="flex items-center text-primary duration-300 hover:translate-y-1">
+						<a href="#about" className="inline-flex items-center text-primary duration-300 hover:translate-y-1">
 							<BsMouse className="text-3xl mr-1" />
 							<span className="text-sm font-medium mr-1">Scroll down</span>
 							<BsArrowDown className="text-xl" />
