@@ -58,3 +58,37 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Common classes */
+
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section__title {
+    font-size: 1.5rem;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: 0.813rem;
+    margin-bottom: 3rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+/* Layout */
+
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
