@@ -11,8 +11,8 @@ const Navbar = () => {
 
     return (
         <header className="header" id="header">
-            <nav className="nav container">
-                <a href="#" className="nav__logo">Abraham </a>
+            <nav className="nav max-w-5xl h-12 flex justify-between items-center container">
+                <a href="#" className="nav__logo text-title font-medium hover:text-primary">Abraham </a>
                 {/* <div className={`fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-white px-6 pt-8 pb-16 shadow-md border rounded-t-3xl duration-300`} id="nav-menu"> */}
                 <div id="nav-menu" className="nav__menu">
                     <ul className="nav__list grid">
@@ -26,7 +26,7 @@ const Navbar = () => {
                     <FiX id="nav-close" className="nav__close" onClick={toggleNavMenu} />
                 </div>
                 <div className="nav__btns">
-                    <div id="nav-toggle" className="nav__toggle" onClick={toggleNavMenu}>
+                    <div id="nav-toggle" className="text-title font-medium text-lg cursor-pointer hover:text-primary nav__toggle" onClick={toggleNavMenu}>
                         <FiGrid className="font-bold" />
                     </div>
                 </div>
