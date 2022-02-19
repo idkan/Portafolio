@@ -25,6 +25,10 @@ module.exports = {
 			},
 			gridColumn: {
 				"span-1/3": "1/3",
+			},
+			fontSize: {
+				'tiny': '.813rem',
+				'xl': '1.2rem',
 			}
 		},
 	},
