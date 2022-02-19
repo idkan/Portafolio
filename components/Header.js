@@ -13,20 +13,19 @@ const Navbar = () => {
         <header className="header" id="header">
             <nav className="nav max-w-5xl h-12 flex justify-between items-center container">
                 <a href="#" className="nav__logo text-title font-medium hover:text-primary">Abraham </a>
-                {/* <div className={`fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-white px-6 pt-8 pb-16 shadow-md border rounded-t-3xl duration-300`} id="nav-menu"> */}
-                <div id="nav-menu" className="nav__menu">
-                    <ul className="nav__list grid">
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#home" className="nav__link"><FiHome />Home</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#about" className="nav__link"><FiUser />About</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#skills" className="nav__link"><FiFileText />Skills</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#projects" className="nav__link"><FiBriefcase />Projects</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#blog" className="nav__link"><FiBook />Blog</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#contact" className="nav__link"><FiMessageSquare />Contact</a></li>
+                <div id="nav-menu" className={`nav__menu fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-white pt-8 px-6 pb-12 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-b-sm duration-300`}>
+                    <ul className="nav__list grid grid-cols-3 gap-8">
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#home" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiHome className="text-xl" />Home</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#about" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiUser className="text-xl" />About</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#skills" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiFileText className="text-xl" />Skills</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#projects" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiBriefcase className="text-xl" />Projects</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#blog" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiBook className="text-xl" />Blog</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#contact" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiMessageSquare className="text-xl" />Contact</a></li>
                     </ul>
-                    <FiX id="nav-close" className="nav__close" onClick={toggleNavMenu} />
+                    <FiX id="nav-close" className="nav__close absolute right-5 bottom-2 text-2xl cursor-pointer text-primary hover:text-primary-alt" onClick={toggleNavMenu} />
                 </div>
                 <div className="nav__btns">
-                    <div id="nav-toggle" className="text-title font-medium text-lg cursor-pointer hover:text-primary nav__toggle" onClick={toggleNavMenu}>
+                    <div id="nav-toggle" className="nav__toggle text-title font-medium text-lg cursor-pointer hover:text-primary" onClick={toggleNavMenu}>
                         <FiGrid className="font-bold" />
                     </div>
                 </div>
