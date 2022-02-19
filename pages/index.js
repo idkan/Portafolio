@@ -6,7 +6,7 @@ import { BsMouse, BsArrowDown } from "react-icons/bs";
 const Home = () => {
 	return (
 		<Layout>
-			<section id="home" className="pt-8 px-4 pb-16">
+			{/* <section id="home" className="pt-8 px-4 pb-16">
 				<div className="max-w-5xl mx-auto grip gap-4">
 					<div className="grid grid-cols-home-content pt-14 items-center mb-4">
 						<div className="grid grid-cols-home-social gap-y-4">
@@ -40,7 +40,7 @@ const Home = () => {
 						</a>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</Layout>
 	);
 }
