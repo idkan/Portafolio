@@ -7,7 +7,7 @@
 :root,
 #root,
 #docs-root {
-    --main-color: 204;
+    --main-color: 27;
 
     --first-color: hsl(var(--main-color), 69%, 61%);
     --second-color: hsl(var(--main-color), 69%, 61%);
