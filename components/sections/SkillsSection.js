@@ -5,13 +5,23 @@ import { BsBraces } from "react-icons/bs";
 
 const SkillsSection = () => {
 
-    const [isFrontOpen, setIsFrontOpen] = useState(false);
+    const [isFrontOpen, setIsFrontOpen] = useState(true);
+    const [isBackOpen, setIsBackOpen] = useState(false);
+
+    const toggleFront = () => {
+        setIsFrontOpen(!isFrontOpen);
+    }
+
+    const toggleBack = () => {
+        setIsBackOpen(!isBackOpen);
+    }
 
     const skills = [
         {
             title: "Frontend Developer",
             icon: <BsBraces className="skills__icon text-3xl text-primary mr-3" />,
-            active: true,
+            toggleFunction: toggleFront,
+            isOpen: isFrontOpen,
             years: "More than 3 years",
             technologies: [
                 {
@@ -35,7 +45,8 @@ const SkillsSection = () => {
         {
             title: "Backend Developer",
             icon: <FiServer className="skills__icon text-3xl text-primary mr-3" />,
-            active: false,
+            toggleFunction: toggleBack,
+            isOpen: isBackOpen,
             years: "More than 2.5 years",
             technologies: [
                 {
@@ -67,16 +78,16 @@ const SkillsSection = () => {
             <div className="skills__container container grid gap-6 gap-y-0">
                 <div className="skills__data col-span-1/3">
                     {skills.map((item, index) => (
-                        <div className="skills__content" onClick={() => setIsFrontOpen(!index.active)} key={index}>
+                        <div className="skills__content" key={index} onClick={item.toggleFunction}>
                             <div className="skills__header flex items-center mb-10 cursor-pointer">
                                 {item.icon}
                                 <div>
                                     <h1 className="skills__title text-xl">{item.title}</h1>
                                     <span className="skills__subtitle text-base text-text-light font-medium mb-3">{item.years}</span>
                                 </div>
-                                <FiChevronDown className={`skills__arrow text-3xl text-primary ml-auto duration-[400ms]  ${isFrontOpen ? "rotate-[-180deg]" : ""}`} />
+                                <FiChevronDown className={`skills__arrow text-3xl text-primary ml-auto duration-[400ms]  ${item.isOpen ? "rotate-[-180deg]" : ""}`} />
                             </div>
-                            <div className={`skills__list grid gap-6 ${isFrontOpen ? "h-max mb-10" : "h-0 overflow-hidden"}`}>
+                            <div className={`skills__list grid gap-6 ${item.isOpen ? "h-max mb-10" : "h-0 overflow-hidden"}`}>
                                 {item.technologies.map((tech, index) => (
                                     <div className="skills__data" key={index}>
                                         <div className="skills__titles flex justify-between mb-2">
