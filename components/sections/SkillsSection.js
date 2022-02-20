@@ -58,6 +58,8 @@ const SkillsSection = () => {
         },
     ];
 
+    // TODO: Toggle skills section
+
     return (
         <section className="skills section" id="skills">
             <h2 className="section__title">Skills</h2>
