@@ -1,6 +1,9 @@
 import { FiDownload } from "react-icons/fi";
 
 const AboutSection = () => {
+
+    const experience = [{ title: "Years <br /> Experience", years: "03+", }, { title: "Completed <br /> Project", years: "10+", }, { title: "Companies <br /> Worked", years: "02+", }];
+
     return (
         <section className="about section" id="about">
             <h2 className="section__title">About Me</h2>
@@ -12,18 +15,12 @@ const AboutSection = () => {
                         Software Engineer with a background in Web Development. I enjoy creating clean and efficient code. I'm always looking for new challenges that will help me to improve my skills.
                     </p>
                     <div className="about__info flex justify-evenly mb-10">
-                        <div>
-                            <span className="about__info-title block text-center text-lg font-semibold text-title">03+</span>
-                            <span className="about__info-name block text-center text-tiny">Years <br /> Experience</span>
-                        </div>
-                        <div>
-                            <span className="about__info-title block text-center text-lg font-semibold text-title">10+</span>
-                            <span className="about__info-name block text-center text-tiny">Completed <br /> Project</span>
-                        </div>
-                        <div>
-                            <span className="about__info-title block text-center text-lg font-semibold text-title">02+</span>
-                            <span className="about__info-name block text-center text-tiny">Companies <br /> Worked</span>
-                        </div>
+                        {experience.map((item, index) => (
+                            <div className="about__info-item" key={index}>
+                                <span className="about__info-title block text-center text-lg font-semibold text-title">{item.years}</span>
+                                <span className="about__info-name block text-center text-tiny" dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                            </div>
+                        ))}
                     </div>
                     <div className="about__buttons flex justify-center">
                         <a href="./assets/pdf/resume2022.pdf" download="Resume_AbrahamSerena_2022" className="button bg-primary text-white p-4 rounded-lg font-medium hover:bg-primary-alt button--flex inline-flex items-center">
