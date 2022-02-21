@@ -7,6 +7,8 @@ const JourneySection = () => {
 
     const [isEducationOpen, setEducationOpen] = useState(true);
 
+    // TODO: Refactor this to use a simple array of objects instead of a bunch of divs
+
     return (
         <div className="qualification selection">
             <h2 className="section__title">Journey</h2>
