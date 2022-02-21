@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name="description" content="Abraham SWE Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </>
     );
 }
