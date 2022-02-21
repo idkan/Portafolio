@@ -38,7 +38,7 @@ const SkillsSection = () => {
                 },
                 {
                     name: "React",
-                    level: "90%",
+                    level: "70%",
                 },
             ],
         },
@@ -51,25 +51,23 @@ const SkillsSection = () => {
             technologies: [
                 {
                     name: "Node.js",
-                    level: "90%",
+                    level: "80%",
                 },
                 {
-                    name: "Express",
-                    level: "90%",
+                    name: "PHP",
+                    level: "70%",
                 },
                 {
-                    name: "MongoDB",
-                    level: "90%",
+                    name: "Java",
+                    level: "60%",
                 },
                 {
-                    name: "MySQL",
-                    level: "90%",
+                    name: "Python",
+                    level: "40%",
                 },
             ],
         },
     ];
-
-    // TODO: Toggle skills section
 
     return (
         <section className="skills section" id="skills">
