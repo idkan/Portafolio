@@ -61,7 +61,7 @@ const JourneySection = () => {
             <div className="qualification__container container">
                 <div className="qualification__tabs flex justify-evenly mb-8" >
                     {MyJourney.map((item, index) => (
-                        <div className="qualification__button text-lg font-medium cursor-pointer hover:text-primary button--flex inline-flex items-center" onClick={() => setEducationOpen(item.current)}>
+                        <div className="qualification__button text-lg font-medium cursor-pointer hover:text-primary button--flex inline-flex items-center" onClick={() => setEducationOpen(item.current)} key={index}>
                             {item.logo}
                             {item.title}
                         </div>
@@ -71,7 +71,7 @@ const JourneySection = () => {
                     {MyJourney.map((item, index) => (
                         <div className={`qualification__content ${item.isOpen ? "block" : "hidden"}`} key={index}>
                             {item.data.map((data, index) => (
-                                <div className="qualification__data grid grid-cols-[1fr_max-content_1fr] gap-x-6">
+                                <div className="qualification__data grid grid-cols-[1fr_max-content_1fr] gap-x-6" key={index}>
                                     {data.position === "left" && (
                                         <>
                                             <div>
