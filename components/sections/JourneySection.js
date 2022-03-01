@@ -55,7 +55,7 @@ const JourneySection = () => {
     ];
 
     return (
-        <div className="qualification selection">
+        <section className="qualification selection">
             <h2 className="section__title">Journey</h2>
             <span className="section__subtitle">My Personal Journey</span>
             <div className="qualification__container container">
@@ -99,7 +99,7 @@ const JourneySection = () => {
                                             <div>
                                                 <h3 className="qualification__title text-base font-medium">{data.title}</h3>
                                                 <span className="qualification__subtitle inline-block text-sm mb-4">{data.location}</span>
-                                                <div className="qualification__calendar text-tiny text-text-light inline-flex items-center">
+                                                <div className="qualification__calendar text-tiny text-text-light flex items-center">
                                                     <FiCalendar className="qualification__icon mr-1" />
                                                     {data.date}
                                                 </div>
@@ -112,7 +112,7 @@ const JourneySection = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
