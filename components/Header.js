@@ -18,7 +18,7 @@ const Navbar = () => {
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#home" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiHome className="text-xl" />Home</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#about" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiUser className="text-xl" />About</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#skills" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiFileText className="text-xl" />Skills</a></li>
-                        <li className="nav__item" onClick={toggleNavMenu}><a href="#projects" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiBriefcase className="text-xl" />Projects</a></li>
+                        <li className="nav__item" onClick={toggleNavMenu}><a href="#portfolio" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiBriefcase className="text-xl" />Projects</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#blog" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiBook className="text-xl" />Blog</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#contact" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary"><FiMessageSquare className="text-xl" />Contact</a></li>
                     </ul>
