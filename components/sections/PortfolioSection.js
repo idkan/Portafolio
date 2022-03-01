@@ -1,15 +1,39 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { BsArrowRight } from "react-icons/bs";
 
-const PortafolioSection = () => {
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+const PortfolioSection = () => {
+
+    const swiperParams = {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        onSlideChange: (swiper) => console.log(swiper),
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    };
 
     return (
         <section className="portfolio section" id="portfolio">
             <h2 className="section__title">Portfolio</h2>
             <span className="section__subtitle">My recent work</span>
 
-            <div className="portfolio__container overflow container">
-                <div className="portfolio__item">
-                    <div className="portfolio__content grid px-6 py-0">
+            <div className="portfolio__container container">
+                <Swiper {...swiperParams}>
+                    <SwiperSlide className="portfolio__content grid px-6 py-0">
                         <img src="./assets/images/rentMe.png" alt="Rent Me APP" className="portfolio__image w-64 rounded-lg justify-self-center" />
                         <div className="portfolio__data">
                             <h3 className="portfolio__title text-lg font-medium mb-2">Rent Me APP</h3>
@@ -20,12 +44,12 @@ const PortafolioSection = () => {
                             </p>
                             <a href="#" className="button bg-primary text-white p-4 rounded-lg font-medium hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
                                 View Project
-                                <BsArrowRight className="button__icon ml-1 group-hover:translate-x-1" />
+                                <BsArrowRight className="button__icon ml-2 group-hover:translate-x-1" />
                             </a>
                         </div>
-                    </div>
+                    </SwiperSlide>
 
-                    <div className="portfolio__content grid px-6 py-0">
+                    <SwiperSlide className="portfolio__content grid px-6 py-0">
                         <img src="./assets/images/cryptoWorld.png" alt="Crypto World APP" className="portfolio__image w-64 rounded-lg justify-self-center" />
                         <div className="portfolio__data">
                             <h3 className="portfolio__title text-lg font-medium mb-2">Crypto World</h3>
@@ -35,12 +59,12 @@ const PortafolioSection = () => {
                             </p>
                             <a href="#" className="button bg-primary text-white p-4 rounded-lg font-medium hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
                                 View Project
-                                <BsArrowRight className="button__icon ml-1 group-hover:translate-x-1" />
+                                <BsArrowRight className="button__icon ml-2 group-hover:translate-x-1" />
                             </a>
                         </div>
-                    </div>
+                    </SwiperSlide>
 
-                    <div className="portfolio__content grid px-6 py-0">
+                    <SwiperSlide className="portfolio__content grid px-6 py-0">
                         <img src="./assets/images/travely.png" alt="Portfolio 2" className="portfolio__image w-64 rounded-lg justify-self-center" />
                         <div className="portfolio__data">
                             <h3 className="portfolio__title text-lg font-medium mb-2">Travely</h3>
@@ -50,14 +74,14 @@ const PortafolioSection = () => {
                             </p>
                             <a href="#" className="button bg-primary text-white p-4 rounded-lg font-medium hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
                                 View Project
-                                <BsArrowRight className="button__icon ml-1 group-hover:translate-x-1" />
+                                <BsArrowRight className="button__icon ml-2 group-hover:translate-x-1" />
                             </a>
                         </div>
-                    </div>
-                </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </section>
     )
 }
 
-export default PortafolioSection;
+export default PortfolioSection;

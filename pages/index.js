@@ -4,7 +4,7 @@ import HomeSection from "../components/sections/HomeSection";
 import AboutSection from "../components/sections/AboutSection";
 import SkillsSection from "../components/sections/SkillsSection";
 import JourneySection from "../components/sections/JourneySection";
-import PortafolioSection from "../components/sections/PortafolioSection";
+import PortfolioSection from "../components/sections/PortfolioSection";
 
 const Home = () => {
 	return (
@@ -13,7 +13,7 @@ const Home = () => {
 			<AboutSection />
 			<SkillsSection />
 			<JourneySection />
-			<PortafolioSection />
+			<PortfolioSection />
 		</Layout>
 	);
 }
