@@ -1,29 +1,22 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 import { BsArrowRight } from "react-icons/bs";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const PortfolioSection = () => {
 
     const swiperParams = {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        onSlideChange: (swiper) => console.log(swiper),
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        }
+        cssMode: true,
+        navigation: true,
+        pagination: true,
+        mousewheel: true,
+        keyboard: true,
+        modules: [Navigation, Pagination, Mousewheel, Keyboard],
+        className: 'portfolio-swiper'
     };
 
     return (
@@ -32,7 +25,7 @@ const PortfolioSection = () => {
             <span className="section__subtitle">My recent work</span>
 
             <div className="portfolio__container container">
-                <Swiper {...swiperParams}>
+                <Swiper {...swiperParams} >
                     <SwiperSlide className="portfolio__content grid px-6 py-0">
                         <img src="./assets/images/rentMe.png" alt="Rent Me APP" className="portfolio__image w-64 rounded-lg justify-self-center" />
                         <div className="portfolio__data">
