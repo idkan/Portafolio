@@ -1,8 +1,7 @@
 import { FiDownload } from "react-icons/fi";
+import { experience } from "../../assets/data/portfolioData";
 
 const AboutSection = () => {
-
-    const experience = [{ title: "Years <br /> Experience", years: "03+", }, { title: "Completed <br /> Project", years: "10+", }, { title: "Companies <br /> Worked", years: "02+", }];
 
     return (
         <section className="about section" id="about">
