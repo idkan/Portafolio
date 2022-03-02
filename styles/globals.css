@@ -96,3 +96,26 @@ img {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
+/* Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.5rem !important;
+    color: var(--first-color);
+}
+
+.swiper-button-prev {
+    left: -0.3rem !important;
+}
+
+.swiper-button-next {
+    right: 0.3rem !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+    bottom: 0.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color) !important;
+}
