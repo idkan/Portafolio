@@ -4,7 +4,7 @@ const ProjectInMind = () => {
     return (
         <section className="project text-center selection">
             <div className="project__bg bg-primary pt-12">
-                <div className="project__container container grid">
+                <div className="project__container container grid gap-6">
                     <div className="project__data">
                         <h2 className="project__title text-lg mb-3 text-white">You have a new project</h2>
                         <p className="project__description mb-6 text-white">
