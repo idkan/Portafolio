@@ -33,7 +33,7 @@ const PortfolioSection = () => {
                             <img src={card.image} alt={`${card.title} APP`} className="portfolio__image w-64 rounded-lg justify-self-center" />
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title text-lg font-medium mb-2">{card.title}</h3>
-                                <p className="portfolio__description font-normal mb-3">{card.description}</p>
+                                <p className="portfolio__description text-xs font-normal mb-3">{card.description}</p>
                                 <a href={card.link} className="button bg-primary text-white p-3 rounded-lg font-normal hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
                                     View Project
                                     <BsArrowRight className="button__icon ml-2 group-hover:translate-x-1" />

@@ -8,7 +8,7 @@ const AboutSection = () => {
             <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My Introduction</span>
             <div className="about__container container grid gap-6">
-                <img src="./assets/images/about.png" alt="About Me" className="about__img w-52 rounded-lg justify-self-center self-center" />
+                <img src="./assets/images/contactMe.png" alt="About Me" className="about__img w-52 rounded-lg justify-self-center self-center" />
                 <div className="about__data">
                     <p className="about__description text-center mb-10">
                         Software Engineer with a background in Web Development. I enjoy creating clean and efficient code. I'm always looking for new challenges that will help me to improve my skills.
