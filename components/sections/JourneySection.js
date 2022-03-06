@@ -61,7 +61,7 @@ const JourneySection = () => {
             <div className="qualification__container container">
                 <div className="qualification__tabs flex justify-evenly mb-8" >
                     {myJourney.map((item, index) => (
-                        <div className="qualification__button text-lg font-medium cursor-pointer hover:text-primary button--flex inline-flex items-center" onClick={() => setEducationOpen(item.current)} key={index}>
+                        <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen  ? 'text-primary' : 'text-text'} hover:text-primary button--flex inline-flex items-center`} onClick={() => setEducationOpen(item.current)} key={index}>
                             {item.logo}
                             {item.title}
                         </div>
