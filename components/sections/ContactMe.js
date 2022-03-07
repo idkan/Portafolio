@@ -1,4 +1,4 @@
-import { FiMail, FiMapPin } from "react-icons/fi";
+import { FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
 
 const ContactMe = () => {
     return (
@@ -17,7 +17,14 @@ const ContactMe = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="contact__information flex mb-8n">
+                    <div className="contact__information flex mb-8">
+                        <FiLinkedin className="contact__icon text-[2rem] text-primary mr-3" />
+                        <div className="contact__info">
+                            <h3 className="contact__title text-base font-medium">LinkedIn</h3>
+                            <span className="contact__subtitle text-sm text-text-light">Abraham Serena</span>
+                        </div>
+                    </div>
+                    <div className="contact__information flex mb-8">
                         <FiMapPin className="contact__icon text-[2rem] text-primary mr-3" />
                         <div className="contact__info">
                             <h3 className="contact__title text-base font-medium">Location</h3>
