@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiHome, FiUser, FiFileText, FiBriefcase, FiBook, FiMessageSquare, FiGrid, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -8,6 +8,30 @@ const Navbar = () => {
     const toggleNavMenu = () => {
         setNavMenuOpen(!navMenuOpen);
     }
+
+    useEffect(function mount() {
+        const sections = window.document.querySelectorAll("section[id]");
+
+        function scrollActive() {
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 50;
+                let sectionId = section.getAttribute("id");
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    window.document.querySelector(`a[href="#${sectionId}"]`).classList.add("text-primary");
+                } else {
+                    window.document.querySelector(`a[href="#${sectionId}"]`).classList.remove("text-primary");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", scrollActive);
+    })
+
+
 
     return (
         <header className="header" id="header">
