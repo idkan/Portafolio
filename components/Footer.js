@@ -1,3 +1,6 @@
+import { FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -9,10 +12,10 @@ const Footer = () => {
                     </div>
                     <ul className="footer__links">
                         <li className="footer__links">
-                            <a href="#" className="footer__links-item"> About</a>
+                            <a href="#about" className="footer__links-item"> About</a>
                         </li>
                         <li className="footer__links">
-                            <a href="#" className="footer__links-item"> Contact</a>
+                            <a href="#contact" className="footer__links-item"> Contact</a>
                         </li>
                         <li className="footer__links">
                             <a href="#" className="footer__links-item"> Blog</a>
@@ -21,6 +24,18 @@ const Footer = () => {
                             <a href="#" className="footer__links-item"> Privacy Policy</a>
                         </li>
                     </ul>
+                    <div className="footer__socials">
+                        <a href="https://www.linkedin.com/in/abraham-serena/" className="footer__socials-item">\
+                            <FiLinkedin />
+                        </a>
+                        <a href="https://twitter.com/idkantv" className="footer__socials-item">
+                            <FiTwitter />    
+                        </a>
+                        <a href="https://www.instagram.com/abraham_salk/" className="footer__socials-item">
+                            <FiInstagram />
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </footer>
