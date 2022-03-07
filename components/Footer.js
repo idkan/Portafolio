@@ -7,6 +7,20 @@ const Footer = () => {
                         <h1 className="footer__title">Abraham</h1>
                         <span className="footer__subtitle">Software Engineer</span>
                     </div>
+                    <ul className="footer__links">
+                        <li className="footer__links">
+                            <a href="#" className="footer__links-item"> About</a>
+                        </li>
+                        <li className="footer__links">
+                            <a href="#" className="footer__links-item"> Contact</a>
+                        </li>
+                        <li className="footer__links">
+                            <a href="#" className="footer__links-item"> Blog</a>
+                        </li>
+                        <li className="footer__links">
+                            <a href="#" className="footer__links-item"> Privacy Policy</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
