@@ -28,7 +28,18 @@ const Navbar = () => {
             });
         }
 
+        function scrollHeader() {
+            const nav = window.document.getElementById("header");
+            if (window.scrollY >= 80 ) {
+                console.log("scrollY", window.scrollY);
+                nav.classList.add("shadow-[0_-1px_4px_rgba(0,0,0,0.15)]");
+            } else {
+                nav.classList.remove("shadow-[0_-1px_4px_rgba(0,0,0,0.15)]");
+            }
+        }
+
         window.addEventListener("scroll", scrollActive);
+        window.addEventListener("scroll", scrollHeader);
     });
 
     return (
