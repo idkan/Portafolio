@@ -22,7 +22,7 @@ const PortfolioSection = () => {
     };
 
     return (
-        <section className="portfolio section" id="portfolio">
+        <section className="portfolio section mb-8" id="portfolio">
             <h2 className="section__title">Portfolio</h2>
             <span className="section__subtitle">My recent work</span>
 
