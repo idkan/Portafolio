@@ -29,9 +29,7 @@ const Navbar = () => {
         }
 
         window.addEventListener("scroll", scrollActive);
-    })
-
-
+    });
 
     return (
         <header className="header" id="header">
