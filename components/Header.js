@@ -1,9 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { FiHome, FiUser, FiFileText, FiBriefcase, FiBook, FiMessageSquare, FiGrid, FiX } from "react-icons/fi";
+import { useTheme } from "next-themes";
+import { FiHome, FiUser, FiFileText, FiBriefcase, FiBook, FiMessageSquare, FiGrid, FiX, FiMoon, FiSun } from "react-icons/fi";
 
 const Navbar = () => {
 
+    const { systemTheme, theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
     const [navMenuOpen, setNavMenuOpen] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    const renderThemeChanger = () => {
+
+        if (!mounted) return null;
+
+        const currentTheme = theme === "system" ? systemTheme : theme;
+
+        if (currentTheme === "light") {
+            return (
+                <FiMoon className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt" onClick={() => setTheme("dark")} />
+            )
+        } else {
+            return (
+                <FiSun className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt" onClick={() => setTheme("light")} />
+            )
+        }
+    }
 
     const toggleNavMenu = () => {
         setNavMenuOpen(!navMenuOpen);
@@ -56,7 +80,8 @@ const Navbar = () => {
                     </ul>
                     <FiX id="nav-close" className="nav__close absolute right-5 bottom-2 text-2xl cursor-pointer text-primary hover:text-primary-alt" onClick={toggleNavMenu} />
                 </div>
-                <div className="nav__btns">
+                <div className="nav__btns flex items-center">
+                    {renderThemeChanger()}
                     <div id="nav-toggle" className="nav__toggle text-title font-medium text-lg cursor-pointer hover:text-primary" onClick={toggleNavMenu}>
                         <FiGrid className="font-bold" />
                     </div>

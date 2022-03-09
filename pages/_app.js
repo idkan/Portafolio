@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from 'next/head';
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps }) {
                 <meta name="description" content="Abraham SWE Portfolio" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Component {...pageProps} />
+            <ThemeProvider enableSystem={true} attribute="class">
+                <Component {...pageProps} />
+            </ThemeProvider>
         </>
     );
 }
