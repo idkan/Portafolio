@@ -20,11 +20,11 @@ const Navbar = () => {
 
         if (currentTheme === "light") {
             return (
-                <FiMoon className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt dark:text-title-dark dark:hover:text-primary" onClick={() => setTheme("dark")} />
+                <FiMoon className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt duration-300 dark:text-title-dark dark:hover:text-primary" onClick={() => setTheme("dark")} />
             )
         } else {
             return (
-                <FiSun className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt dark:text-title-dark dark:hover:text-primary" onClick={() => setTheme("light")} />
+                <FiSun className="text-xl cursor-pointer text-sm text-title mr-4 hover:text-primary-alt duration-300 dark:text-title-dark dark:hover:text-primary" onClick={() => setTheme("light")} />
             )
         }
     }

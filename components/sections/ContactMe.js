@@ -21,7 +21,9 @@ const ContactMe = () => {
                         <FiLinkedin className="contact__icon text-[2rem] text-primary mr-3" />
                         <div className="contact__info">
                             <h3 className="contact__title text-base font-medium dark:text-title-dark">LinkedIn</h3>
-                            <span className="contact__subtitle text-sm text-text-light dark:text-text-dark">Abraham Serena</span>
+                            <a href="https://www.linkedin.com/in/abraham-serena/" target="_blank" rel="noopener noreferrer" className="contact__link">
+                                <span className="contact__subtitle text-sm text-text-light dark:text-text-dark">Abraham Serena</span>
+                            </a>
                         </div>
                     </div>
                     <div className="contact__information flex mb-8">
