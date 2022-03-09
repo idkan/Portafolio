@@ -3,8 +3,8 @@ import { FiGithub, FiTwitter, FiInstagram } from "react-icons/fi";
 
 const Footer = () => {
     return (
-        <footer className="footer pt-8">
-            <div className="footer__bg bg-secondary pt-8 px-0 pb-12">
+        <footer className="footer">
+            <div className="footer__bg bg-secondary pt-8 px-0 pb-12 dark:bg-secondary-dark">
                 <div className="footer__container container grid gap-6 gap-y-14">
                     <div className="footer__item">
                         <h1 className="footer__title text-lg mb-1 text-white">Abraham</h1>
