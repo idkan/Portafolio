@@ -63,9 +63,9 @@ const SkillsSection = () => {
     ];
 
     return (
-        <section className="skills section" id="skills">
-            <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My Technical Skills</span>
+        <section className="skills section bg-body dark:bg-body-dark" id="skills">
+            <h2 className="section__title dark:text-title-dark">Skills</h2>
+            <span className="section__subtitle dark:text-text-dark">My Technical Skills</span>
             <div className="skills__container container grid gap-6 gap-y-0">
                 <div className="skills__data col-span-1/3">
                     {skills.map((item, index) => (
@@ -73,7 +73,7 @@ const SkillsSection = () => {
                             <div className="skills__header flex items-center mb-10 cursor-pointer">
                                 {item.icon}
                                 <div>
-                                    <h1 className="skills__title text-xl">{item.title}</h1>
+                                    <h1 className="skills__title text-xl dark:text-title-dark">{item.title}</h1>
                                     <span className="skills__subtitle text-base text-text-light font-medium mb-3">{item.years}</span>
                                 </div>
                                 <FiChevronDown className={`skills__arrow text-3xl text-primary ml-auto duration-[400ms]  ${item.isOpen ? "rotate-[-180deg]" : ""}`} />
@@ -81,8 +81,8 @@ const SkillsSection = () => {
                             <div className={`skills__list grid gap-6 ${item.isOpen ? "h-max mb-10" : "h-0 overflow-hidden"}`}>
                                 {item.technologies.map((tech, index) => (
                                     <div className="skills__data" key={index}>
-                                        <div className="skills__titles flex justify-between mb-2">
-                                            <h3 className="skills__name text-base font-medium">{tech.name}</h3>
+                                        <div className="skills__titles flex justify-between mb-2 dark:text-title-dark">
+                                            <h3 className="skills__name text-base font-medium dark:text-title-dark">{tech.name}</h3>
                                             <span className="skills__number">{tech.level}</span>
                                         </div>
                                         <div className="skills__bar h-1 rounded-md bg-text-light">
