@@ -4,9 +4,9 @@ import { experience } from "../../assets/data/portfolioData";
 const AboutSection = () => {
 
     return (
-        <section className="about section" id="about">
-            <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">My Introduction</span>
+        <section className="about section bg-body dark:bg-body-dark" id="about">
+            <h2 className="section__title dark:text-title-dark">About Me</h2>
+            <span className="section__subtitle dark:text-text-dark">My Introduction</span>
             <div className="about__container container grid gap-6">
                 <img src="./assets/images/contactMe.png" alt="About Me" className="about__img w-52 rounded-lg justify-self-center self-center" />
                 <div className="about__data">
@@ -16,7 +16,7 @@ const AboutSection = () => {
                     <div className="about__info flex justify-evenly mb-10">
                         {experience.map((item, index) => (
                             <div className="about__info-item" key={index}>
-                                <span className="about__info-title block text-center text-lg font-semibold text-title">{item.years}</span>
+                                <span className="about__info-title block text-center text-lg font-semibold text-title dark:text-title-dark">{item.years}</span>
                                 <span className="about__info-name block text-center text-tiny" dangerouslySetInnerHTML={{ __html: item.title }}></span>
                             </div>
                         ))}
