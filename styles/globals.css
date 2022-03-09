@@ -18,6 +18,12 @@
     --text-color-light: hsl(var(--main-color), 8%, 65%);
     --input-color: hsl(var(--main-color), 70%, 96%);
     --body-color: hsl(var(--main-color), 60%, 99%);
+
+    --second-color-dark: hsl(var(--main-color), 30%, 8%);
+    --title-color-dark: hsl(var(--main-color), 8%, 95%);
+    --text-color-dark: hsl(var(--main-color), 8%, 75%);
+    --input-color-dark: hsl(var(--main-color), 29%, 16%);
+    --body-color-dark: hsl(var(--main-color), 28%, 12%);
 }
 
 * {

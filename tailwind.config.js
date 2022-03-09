@@ -19,6 +19,12 @@ module.exports = {
 				"text-light": "var(--text-color-light)",
 				"input": "var(--input-color)",
 				"body": "var(--body-color)",
+				
+				"secondary-dark": "var(--second-color-dark)",
+				"title-dark": "var(--title-color-dark)",
+				"text-dark": "var(--text-color-dark)",
+				"input-dark": "var(--input-color-dark)",
+				"body-dark": "var(--body-color-dark)"
 			},
 			gridTemplateColumns: {
 				"home-social": "max-content",
