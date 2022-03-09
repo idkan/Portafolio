@@ -3,12 +3,12 @@ import { BsMouse, BsArrowDown } from "react-icons/bs";
 
 const HomeSection = () => {
     return (
-        <section className="home section" id="home">
+        <section className="home section bg-body dark:bg-body-dark" id="home">
             <div className="home__container container grid gap-4">
                 <div className="home__content grid gap-6 grid-cols-[.5fr_3fr] pt-14 items-center">
                     <div className="home__social grid grid-cols-[max-content] gap-y-4">
                         <a href="https://www.linkedin.com/in/abraham-serena/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-xl inline-block" /></a>
-                        <a href="https://github.com/idkan/" target="_blank" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl inline-block" /></a>
+                        <a href="https://github.com/idkan/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl inline-block" /></a>
                         <a href="https://www.instagram.com/abraham_salk/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiInstagram className="text-xl inline-block" /></a>
                     </div>
                     <div className="home__img">
@@ -23,9 +23,9 @@ const HomeSection = () => {
                         </svg>
                     </div>
                     <div className="home__data col-span-1/3">
-                        <h1 className="home__title text-3xl">Hi, I'm Abraham</h1>
-                        <h3 className="home__subtitle text-xl text-text font-medium mb-3">Software Engineer</h3>
-                        <p className="home__description mb-8">
+                        <h1 className="home__title text-3xl dark:text-title-dark">Hi, I'm Abraham</h1>
+                        <h3 className="home__subtitle text-xl text-text font-medium mb-3 dark:text-text-dark">Software Engineer</h3>
+                        <p className="home__description mb-8 dark:text-text-dark">
                             FullStack Developer based in M&eacute;xico. I'm passionate about building's software and I'm always looking for new challenges.
                             Highly motivated and always ready to learn new things.
                         </p>
@@ -37,7 +37,7 @@ const HomeSection = () => {
                 <div className="home__scroll">
                     <a href="#about" className="home__scroll-button text-primary duration-300 hover:translate-y-1 button--flex inline-flex items-center">
                         <BsMouse className="home__scroll-mouse text-3xl" />
-                        <span className="home__scroll-name text-sm text-title font-medium mr-1">Scroll Down</span>
+                        <span className="home__scroll-name text-sm text-title font-medium mr-1 dark:text-text-dark">Scroll Down</span>
                         <BsArrowDown className="home__scroll-arrow text-lg" />
                     </a>
                 </div>
