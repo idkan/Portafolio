@@ -2,8 +2,8 @@ import { FiSend } from "react-icons/fi";
 
 const ProjectInMind = () => {
     return (
-        <section className="project text-center selection bg-primary dark:bg-secondary-dark">
-            <div className="project__bg pt-12">
+        <section className="project text-center selection bg-primary py-12 dark:bg-secondary-dark">
+            <div className="project__bg">
                 <div className="project__container container grid gap-6">
                     <div className="project__data">
                         <h2 className="project__title text-lg mb-3 text-white">You have a new project</h2>
