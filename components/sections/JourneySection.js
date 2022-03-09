@@ -55,13 +55,13 @@ const JourneySection = () => {
     ];
 
     return (
-        <section className="qualification selection">
-            <h2 className="section__title">Journey</h2>
-            <span className="section__subtitle">My Personal Journey</span>
+        <section className="qualification selection bg-body dark:bg-body-dark">
+            <h2 className="section__title dark:text-title-dark">Journey</h2>
+            <span className="section__subtitle dark:text-text-dark">My Personal Journey</span>
             <div className="qualification__container container">
                 <div className="qualification__tabs flex justify-evenly mb-8" >
                     {myJourney.map((item, index) => (
-                        <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen  ? 'text-primary' : 'text-text'} hover:text-primary button--flex inline-flex items-center`} onClick={() => setEducationOpen(item.current)} key={index}>
+                        <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen  ? 'text-primary' : 'text-text dark:text-text-dark'} hover:text-primary button--flex inline-flex items-center`} onClick={() => setEducationOpen(item.current)} key={index}>
                             {item.logo}
                             {item.title}
                         </div>
@@ -75,7 +75,7 @@ const JourneySection = () => {
                                     {data.position === "left" && (
                                         <>
                                             <div>
-                                                <h3 className="qualification__title text-base font-medium">{data.title}</h3>
+                                                <h3 className="qualification__title text-base font-medium dark:text-title-dark">{data.title}</h3>
                                                 <span className="qualification__subtitle inline-block text-sm mb-4">{data.location}</span>
                                                 <div className="qualification__calendar text-tiny text-text-light inline-flex items-center">
                                                     <FiCalendar className="qualification__icon mr-1" />
@@ -97,7 +97,7 @@ const JourneySection = () => {
                                                 {!data.isLast && <span className="qualification__line block w-px h-full bg-primary translate-x-[5.5px] translate-y-[-7px]"></span>}
                                             </div>
                                             <div>
-                                                <h3 className="qualification__title text-base font-medium">{data.title}</h3>
+                                                <h3 className="qualification__title text-base font-medium dark:text-title-dark">{data.title}</h3>
                                                 <span className="qualification__subtitle inline-block text-sm mb-4">{data.location}</span>
                                                 <div className="qualification__calendar text-tiny text-text-light flex items-center">
                                                     <FiCalendar className="qualification__icon mr-1" />
