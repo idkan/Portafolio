@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
                 {children}
             </main>
             <Footer />
-            <a href="#" className="scrollUp fixed right-4 bg-primary opacity-80 py-0 px-1 rounded-md z-10 transition-[.4s] hover:bg-primary-alt" id="scroll-up">
+            <a href="#" className="scrollUp fixed right-4 bg-primary opacity-80 py-0 px-1 rounded-md z-[9] transition-[.4s] hover:bg-primary-alt" id="scroll-up">
                 <FiArrowUp className="text-2xl text-white" />
             </a>
         </div>
