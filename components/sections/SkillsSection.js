@@ -73,7 +73,7 @@ const SkillsSection = () => {
                             <div className="skills__header flex items-center mb-10 cursor-pointer">
                                 {item.icon}
                                 <div>
-                                    <h1 className="skills__title text-xl dark:text-title-dark">{item.title}</h1>
+                                    <h1 className="skills__title text-xl dark:text-title-dark xs:text-[.938rem]">{item.title}</h1>
                                     <span className="skills__subtitle text-base text-text-light font-medium mb-3">{item.years}</span>
                                 </div>
                                 <FiChevronDown className={`skills__arrow text-3xl text-primary ml-auto duration-[400ms]  ${item.isOpen ? "rotate-[-180deg]" : ""}`} />
