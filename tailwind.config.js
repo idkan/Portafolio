@@ -36,6 +36,9 @@ module.exports = {
 			fontSize: {
 				'tiny': '.813rem',
 				'xl': '1.2rem',
+			},
+			screens: {
+				"xs": {"max": "350px"},
 			}
 		},
 	},
