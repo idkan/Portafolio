@@ -69,8 +69,8 @@ const Navbar = () => {
         <header className="header dark:bg-body-dark" id="header">
             <nav className="nav max-w-5xl h-12 flex justify-between items-center container">
                 <a href="#" className="nav__logo text-title font-medium hover:text-primary dark:text-title-dark dark:hover:text-primary">Abraham </a>
-                <div id="nav-menu" className={`nav__menu fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-body pt-8 px-6 pb-12 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-b-sm duration-300 dark:bg-body-dark`}>
-                    <ul className="nav__list grid grid-cols-3 gap-8">
+                <div id="nav-menu" className={`nav__menu fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-body pt-8 px-6 pb-12 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-b-sm duration-300 dark:bg-body-dark xs:px-1 xs:pb-16`}>
+                    <ul className="nav__list grid grid-cols-3 gap-8 xs:gap-x-0">
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#home" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary dark:text-title-dark dark:hover:text-primary"><FiHome className="text-xl" />Home</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#about" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary dark:text-title-dark dark:hover:text-primary"><FiUser className="text-xl" />About</a></li>
                         <li className="nav__item" onClick={toggleNavMenu}><a href="#skills" className="nav__link flex flex-col items-center text-tiny text-title font-medium hover:text-primary dark:text-title-dark dark:hover:text-primary"><FiFileText className="text-xl" />Skills</a></li>
