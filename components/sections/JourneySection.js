@@ -71,7 +71,7 @@ const JourneySection = () => {
                     {myJourney.map((item, index) => (
                         <div className={`qualification__content ${item.isOpen ? "block" : "hidden"}`} key={index}>
                             {item.data.map((data, index) => (
-                                <div className="qualification__data grid grid-cols-[1fr_max-content_1fr] gap-x-6" key={index}>
+                                <div className="qualification__data grid grid-cols-[1fr_max-content_1fr] gap-x-6 xs:gap-2" key={index}>
                                     {data.position === "left" && (
                                         <>
                                             <div>
