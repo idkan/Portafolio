@@ -14,7 +14,7 @@ const ProjectInMind = () => {
                             Contact Me <FiSend className="button__icon inline-block text-xl ml-2 duration-300 project__icon" />
                         </a>
                     </div>
-                    <img className="project__img w-60 justify-self-center" src="./assets/images/aboutMe.png" alt="Project" />
+                    <img className="project__img w-60 justify-self-center xs:w-48" src="./assets/images/aboutMe.png" alt="Project" />
                 </div>
             </div>
         </section>
