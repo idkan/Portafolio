@@ -66,7 +66,7 @@ const SkillsSection = () => {
         <section className="skills section bg-body dark:bg-body-dark" id="skills">
             <h2 className="section__title dark:text-title-dark">Skills</h2>
             <span className="section__subtitle dark:text-text-dark">My Technical Skills</span>
-            <div className="skills__container container grid gap-6 gap-y-0">
+            <div className="skills__container container grid gap-6 gap-y-0 sm:grid-cols-[repeat(2,_1fr)]">
                 <div className="skills__data col-span-1/3">
                     {skills.map((item, index) => (
                         <div className="skills__content" key={index} onClick={toggleFront}>
