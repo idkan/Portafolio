@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__bg bg-secondary pt-8 px-0 pb-12 dark:bg-secondary-dark">
-                <div className="footer__container container grid gap-6 gap-y-14">
+                <div className="footer__container container grid gap-6 gap-y-14 sm:grid-cols-[repeat(2,_1fr)]">
                     <div className="footer__item">
                         <h1 className="footer__title text-lg mb-1 text-white">Abraham</h1>
                         <span className="footer__subtitle text-sm text-white">Software Engineer</span>
