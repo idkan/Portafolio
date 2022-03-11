@@ -6,7 +6,7 @@ const ContactMe = () => {
             <h2 className="section__title dark:text-title-dark">Contact Me</h2>
             <span className="section__subtitle dark:text-text-dark">Get in touch</span>
 
-            <div className="contact__container container grid gap-6 gap-y-12">
+            <div className="contact__container container grid gap-6 gap-y-12 sm:grid-cols-[repeat(2,_1fr)]">
                 <div className="contact__data">
                     <div className="contact__information flex mb-8">
                         <FiMail className="contact__icon text-[2rem] text-primary mr-3" />
