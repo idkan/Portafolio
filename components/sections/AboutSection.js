@@ -7,7 +7,7 @@ const AboutSection = () => {
         <section className="about section bg-body dark:bg-body-dark" id="about">
             <h2 className="section__title dark:text-title-dark">About Me</h2>
             <span className="section__subtitle dark:text-text-dark">My Introduction</span>
-            <div className="about__container container grid gap-6 sm:grid-cols-[repeat(2,_1fr)]">
+            <div className="about__container container grid gap-6 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)]">
                 <img src="./assets/images/contactMe.png" alt="About Me" className="about__img w-52 rounded-lg justify-self-center self-center" />
                 <div className="about__data">
                     <p className="about__description text-center mb-10">

@@ -6,9 +6,9 @@ const ContactMe = () => {
             <h2 className="section__title dark:text-title-dark">Contact Me</h2>
             <span className="section__subtitle dark:text-text-dark">Get in touch</span>
 
-            <div className="contact__container container grid gap-6 gap-y-12 sm:grid-cols-[repeat(2,_1fr)]">
+            <div className="contact__container container grid gap-6 gap-y-12 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)]">
                 <div className="contact__data">
-                    <div className="contact__information flex mb-8">
+                    <div className="contact__information flex mb-8 items-center">
                         <FiMail className="contact__icon text-[2rem] text-primary mr-3" />
                         <div className="contact__info">
                             <h3 className="contact__title text-base font-medium dark:text-title-dark">Email</h3>
@@ -17,7 +17,7 @@ const ContactMe = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="contact__information flex mb-8">
+                    <div className="contact__information flex mb-8 items-center">
                         <FiLinkedin className="contact__icon text-[2rem] text-primary mr-3" />
                         <div className="contact__info">
                             <h3 className="contact__title text-base font-medium dark:text-title-dark">LinkedIn</h3>
@@ -26,7 +26,7 @@ const ContactMe = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="contact__information flex mb-8">
+                    <div className="contact__information flex mb-8 items-center">
                         <FiMapPin className="contact__icon text-[2rem] text-primary mr-3" />
                         <div className="contact__info">
                             <h3 className="contact__title text-base font-medium dark:text-title-dark">Location</h3>

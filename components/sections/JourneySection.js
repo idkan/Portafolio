@@ -58,7 +58,7 @@ const JourneySection = () => {
         <section className="qualification selection bg-body dark:bg-body-dark">
             <h2 className="section__title dark:text-title-dark">Journey</h2>
             <span className="section__subtitle dark:text-text-dark">My Personal Journey</span>
-            <div className="qualification__container container">
+            <div className="qualification__container container xs:mx-4">
                 <div className="qualification__tabs flex justify-evenly mb-8" >
                     {myJourney.map((item, index) => (
                         <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen  ? 'text-primary' : 'text-text dark:text-text-dark'} hover:text-primary button--flex inline-flex items-center`} onClick={() => setEducationOpen(item.current)} key={index}>
