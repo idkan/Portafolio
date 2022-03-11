@@ -67,7 +67,7 @@ const JourneySection = () => {
                         </div>
                     ))}
                 </div>
-                <div className="qualification__sections">
+                <div className="qualification__sections sm:grid sm:grid-cols-[.6fr)] sm:justify-center">
                     {myJourney.map((item, index) => (
                         <div className={`qualification__content ${item.isOpen ? "block" : "hidden"}`} key={index}>
                             {item.data.map((data, index) => (
