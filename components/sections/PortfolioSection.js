@@ -13,7 +13,7 @@ const PortfolioSection = () => {
     const swiperParams = {
         cssMode: true,
         navigation: true,
-        pagination: true,
+        pagination: false,
         mousewheel: true,
         keyboard: true,
         loop: true,
@@ -26,10 +26,10 @@ const PortfolioSection = () => {
             <h2 className="section__title dark:text-title-dark">Portfolio</h2>
             <span className="section__subtitle dark:text-text-dark">My recent work</span>
 
-            <div className="portfolio__container container h-80">
-                <Swiper {...swiperParams} className="h-96">
+            <div className="portfolio__container container">
+                <Swiper {...swiperParams} >
                     {portfolioCards.map((card, index) => (
-                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0">
+                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)]">
                             <img src={card.image} alt={`${card.title} APP`} className="portfolio__image w-64 rounded-lg justify-self-center" />
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title text-lg font-medium mb-2 dark:text-title-dark">{card.title}</h3>
