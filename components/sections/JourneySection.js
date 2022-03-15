@@ -46,10 +46,17 @@ const JourneySection = () => {
                 {
                     title: "Software Engineer",
                     location: "Softtek - Aguascalientes",
-                    date: "2020 - Present",
+                    date: "2020 - 2022",
                     position: "left",
-                    isLast: true
+                    isLast: false
                 },
+                {
+                    title: "Software Engineer",
+                    location: "KwanTec - Remote",
+                    date: "2022 - Present",
+                    position: "right",
+                    isLast: true
+                }
             ]
         }
     ];
