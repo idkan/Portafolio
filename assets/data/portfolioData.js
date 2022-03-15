@@ -30,6 +30,6 @@ export const experience = [
     },
     {
         title: "Companies <br /> Worked",
-        years: "02+",
+        years: "03+",
     }
 ];
