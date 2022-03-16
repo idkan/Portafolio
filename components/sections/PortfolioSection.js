@@ -26,7 +26,7 @@ const PortfolioSection = () => {
             <h2 className="section__title dark:text-title-dark">Portfolio</h2>
             <span className="section__subtitle dark:text-text-dark">My recent work</span>
 
-            <div className="portfolio__container container xs:mx-4">
+            <div className="portfolio__container container xs:mx-4 md:mx-auto">
                 <Swiper {...swiperParams} >
                     {portfolioCards.map((card, index) => (
                         <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)]">
