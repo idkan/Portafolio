@@ -4,7 +4,7 @@ const ProjectInMind = () => {
     return (
         <section className="project text-center selection bg-primary py-12 dark:bg-secondary-dark">
             <div className="project__bg">
-                <div className="project__container container grid gap-6 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)]">
+                <div className="project__container container grid gap-6 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)] md:mx-auto">
                     <div className="project__data">
                         <h2 className="project__title text-lg mb-3 text-white">You have a new project</h2>
                         <p className="project__description mb-6 text-white">
