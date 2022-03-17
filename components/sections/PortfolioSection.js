@@ -22,15 +22,15 @@ const PortfolioSection = () => {
     };
 
     return (
-        <section className="portfolio section bg-body dark:bg-body-dark" id="portfolio">
+        <section className="portfolio section bg-body dark:bg-body-dark md:pt-24 md:px-0 md:pb-8" id="portfolio">
             <h2 className="section__title dark:text-title-dark">Portfolio</h2>
-            <span className="section__subtitle dark:text-text-dark">My recent work</span>
+            <span className="section__subtitle dark:text-text-dark md:mb-16">My recent work</span>
 
             <div className="portfolio__container container xs:mx-4 md:mx-auto">
                 <Swiper {...swiperParams} >
                     {portfolioCards.map((card, index) => (
-                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)]">
-                            <img src={card.image} alt={`${card.title} APP`} className="portfolio__image w-64 rounded-lg justify-self-center" />
+                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)] md:items-center">
+                            <img src={card.image} alt={`${card.title} APP`} className="portfolio__image w-64 rounded-lg justify-self-center md:w-80" />
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title text-lg font-medium mb-2 dark:text-title-dark">{card.title}</h3>
                                 <p className="portfolio__description text-xs font-normal mb-3 dark:text-text-dark">{card.description}</p>
