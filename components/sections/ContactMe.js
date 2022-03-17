@@ -2,9 +2,9 @@ import { FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
 
 const ContactMe = () => {
     return (
-        <section className="contact section bg-body dark:bg-body-dark" id="contact">
+        <section className="contact section bg-body dark:bg-body-dark md:pt-24 md:px-0 md:pb-8" id="contact">
             <h2 className="section__title dark:text-title-dark">Contact Me</h2>
-            <span className="section__subtitle dark:text-text-dark">Get in touch</span>
+            <span className="section__subtitle dark:text-text-dark md:mb-16">Get in touch</span>
 
             <div className="contact__container container grid gap-6 gap-y-12 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)] md:mx-auto">
                 <div className="contact__data">
