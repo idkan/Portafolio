@@ -63,9 +63,9 @@ const SkillsSection = () => {
     ];
 
     return (
-        <section className="skills section bg-body dark:bg-body-dark" id="skills">
+        <section className="skills section bg-body dark:bg-body-dark md:pt-24 md:px-0 md:pb-8" id="skills">
             <h2 className="section__title dark:text-title-dark">Skills</h2>
-            <span className="section__subtitle dark:text-text-dark">My Technical Skills</span>
+            <span className="section__subtitle dark:text-text-dark md:mb-16">My Technical Skills</span>
             <div className="skills__container container grid gap-6 gap-y-0 xs:mx-4 sm:grid-cols-[repeat(2,_1fr)] md:mx-auto">
                 <div className="skills__data col-span-1/3">
                     {skills.map((item, index) => (
