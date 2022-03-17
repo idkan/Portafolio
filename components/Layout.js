@@ -22,13 +22,10 @@ const Layout = ({ children }) => {
         window.addEventListener('scroll', scrollUp);
     });
 
-
-    // TODO: Added MD responsive deign
-
     return (
         <div className="layout">
             <Header />
-            <main className="main">
+            <main className="main md:py-0 md:px-4">
                 {children}
             </main>
             <Footer />
