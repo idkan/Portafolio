@@ -65,6 +65,9 @@ const Navbar = () => {
         window.addEventListener("scroll", scrollHeader);
     });
 
+
+    // TODO: Fix Header on MD breakpoing
+
     return (
         <header className="header dark:bg-body-dark md:top-0 md:bottom-[initial] md:py-0 md:px-4" id="header">
             <nav className="nav max-w-5xl h-12 flex justify-between items-center container xs:mx-4 md:mx-auto">
