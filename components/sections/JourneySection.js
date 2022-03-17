@@ -62,19 +62,19 @@ const JourneySection = () => {
     ];
 
     return (
-        <section className="qualification selection bg-body dark:bg-body-dark">
+        <section className="qualification section bg-body dark:bg-body-dark md:pt-24 md:px-0 md:pb-8">
             <h2 className="section__title dark:text-title-dark">Journey</h2>
-            <span className="section__subtitle dark:text-text-dark">My Personal Journey</span>
+            <span className="section__subtitle dark:text-text-dark md:mb-16">My Personal Journey</span>
             <div className="qualification__container container xs:mx-4 md:mx-auto">
-                <div className="qualification__tabs flex justify-evenly mb-8" >
+                <div className="qualification__tabs flex justify-evenly mb-8 md:justify-center" >
                     {myJourney.map((item, index) => (
-                        <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen ? 'text-primary' : 'text-text dark:text-text-dark'} hover:text-primary button--flex inline-flex items-center`} onClick={() => setEducationOpen(item.current)} key={index}>
+                        <div className={`qualification__button text-lg font-medium cursor-pointer ${item.isOpen ? 'text-primary' : 'text-text dark:text-text-dark'} hover:text-primary button--flex inline-flex items-center md:my-0 md:mx-4`} onClick={() => setEducationOpen(item.current)} key={index}>
                             {item.logo}
                             {item.title}
                         </div>
                     ))}
                 </div>
-                <div className="qualification__sections sm:grid sm:grid-cols-[.6fr)] sm:justify-center">
+                <div className="qualification__sections sm:grid sm:grid-cols-[.6fr)] sm:justify-center md:grid-cols-[.5fr]">
                     {myJourney.map((item, index) => (
                         <div className={`qualification__content ${item.isOpen ? "block" : "hidden"}`} key={index}>
                             {item.data.map((data, index) => (
