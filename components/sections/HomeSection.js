@@ -3,16 +3,16 @@ import { BsMouse, BsArrowDown } from "react-icons/bs";
 
 const HomeSection = () => {
     return (
-        <section className="home section bg-body dark:bg-body-dark" id="home">
-            <div className="home__container container grid gap-4 xs:mx-4 md:mx-auto">
-                <div className="home__content grid gap-6 grid-cols-[.5fr_3fr] pt-14 items-center xs:grid-cols-[.25fr_3fr] sm:grid-cols-[max-content_1fr_1fr]">
+        <section className="home section bg-body dark:bg-body-dark md:pt-24 md:px-0 md:pb-8" id="home">
+            <div className="home__container container grid gap-4 xs:mx-4 md:mx-auto md:gap-y-20">
+                <div className="home__content grid gap-6 grid-cols-[.5fr_3fr] pt-14 items-center xs:grid-cols-[.25fr_3fr] sm:grid-cols-[max-content_1fr_1fr] md:pt-[5.5rem] md:gap-x-8">
                     <div className="home__social grid grid-cols-[max-content] gap-y-4">
                         <a href="https://www.linkedin.com/in/abraham-serena/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-xl inline-block" /></a>
                         <a href="https://github.com/idkan/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl inline-block" /></a>
                         <a href="https://www.instagram.com/abraham_salk/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiInstagram className="text-xl inline-block" /></a>
                     </div>
                     <div className="home__img sm:order-1 sm:justify-self-center">
-                        <svg className="home__blob w-52 fill-primary" viewBox="0 0 200 187">
+                        <svg className="home__blob w-52 fill-primary md:w-72" viewBox="0 0 200 187">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
@@ -34,8 +34,8 @@ const HomeSection = () => {
                         </a>
                     </div>
                 </div>
-                <div className="home__scroll hidden">
-                    <a href="#about" className="home__scroll-button text-primary duration-300 hover:translate-y-1 button--flex inline-flex items-center">
+                <div className="home__scroll hidden md:block">
+                    <a href="#about" className="home__scroll-button text-primary duration-300 hover:translate-y-1 button--flex inline-flex items-center md:ml-12">
                         <BsMouse className="home__scroll-mouse text-3xl" />
                         <span className="home__scroll-name text-sm text-title font-medium mr-1 dark:text-text-dark">Scroll Down</span>
                         <BsArrowDown className="home__scroll-arrow text-lg" />
