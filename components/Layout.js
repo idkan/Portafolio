@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     return (
         <div className="layout">
             <Header />
-            <main className="main md:py-0 md:px-4">
+            <main className="main md:py-0 md:px-4 bg-body dark:bg-body-dark">
                 {children}
             </main>
             <Footer />
