@@ -29,7 +29,7 @@ const PortfolioSection = () => {
             <div className="portfolio__container container xs:mx-4 md:mx-auto">
                 <Swiper {...swiperParams} >
                     {portfolioCards.map((card, index) => (
-                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)] md:items-center">
+                        <SwiperSlide key={index} className="portfolio__content grid gap-6 px-6 py-0 sm:grid-cols-[repeat(2,_1fr)] md:items-center lg:gap-x-20">
                             <img src={card.image} alt={`${card.title} APP`} className="portfolio__image w-64 rounded-lg justify-self-center md:w-80" />
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title text-lg font-medium mb-2 dark:text-title-dark">{card.title}</h3>
