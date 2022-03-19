@@ -23,14 +23,14 @@ const HomeSection = () => {
                         </svg>
                     </div>
                     <div className="home__data col-span-1/3 sm:col-[initial]">
-                        <h1 className="home__title text-3xl dark:text-title-dark">Hi, I'm Abraham</h1>
+                        <h1 className="home__title text-3xl dark:text-title-dark">Hi, I&apos;m Abraham</h1>
                         <h3 className="home__subtitle text-xl text-text font-medium mb-3 dark:text-text-dark">Software Engineer</h3>
                         <p className="home__description mb-8 dark:text-text-dark">
-                            FullStack Developer based in M&eacute;xico. I'm passionate about building's software and I'm always looking for new challenges.
+                            FullStack Developer based in M&eacute;xico. I&apos;m passionate about building's software and I&apos;m always looking for new challenges.
                             Highly motivated and always ready to learn new things.
                         </p>
                         <a href="#contact" className="button bg-primary text-white p-4 rounded-lg font-medium hover:bg-primary-alt button--flex inline-flex items-center">
-                            Let's Talk <FiSend className="button__icon inline-block text-xl ml-2 duration-300" />
+                            Let&apos;s Talk <FiSend className="button__icon inline-block text-xl ml-2 duration-300" />
                         </a>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const AboutSection = () => {
                 <img src="./assets/images/contactMe.png" alt="About Me" className="about__img w-52 rounded-lg justify-self-center self-center md:w-96" />
                 <div className="about__data">
                     <p className="about__description text-center mb-10 md:text-left">
-                        Software Engineer with a background in Web Development. I enjoy creating clean and efficient code. I'm always looking for new challenges that will help me to improve my skills.
+                        Software Engineer with a background in Web Development. I enjoy creating clean and efficient code. I&apos;m always looking for new challenges that will help me to improve my skills.
                     </p>
                     <div className="about__info flex justify-evenly mb-10 md:justify-between">
                         {experience.map((item, index) => (
