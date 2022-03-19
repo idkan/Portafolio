@@ -67,7 +67,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="header dark:bg-body-dark md:top-0 md:bottom-[initial] md:py-0 md:px-4" id="header">
+        <header className="header dark:bg-body-dark md:top-0 md:bottom-[initial] md:py-0 md:px-4 lg:p-0" id="header">
             <nav className="nav max-w-5xl h-12 flex justify-between items-center container xs:mx-4 md:mx-auto md:h-[4.5rem] md:gap-x-4 ">
                 <a href="#" className="nav__logo text-title font-medium hover:text-primary dark:text-title-dark dark:hover:text-primary">Abraham </a>
                 <div id="nav-menu" className={`nav__menu fixed ${navMenuOpen ? "bottom-0" : "-bottom-full"} left-0 w-full bg-body pt-8 px-6 pb-12 shadow-[0_-1px_4px_rgba(0,0,0,0.15)] rounded-t-3xl rounded-b-sm duration-300 dark:bg-body-dark xs:px-1 xs:pb-16 md:static md:w-auto md:shadow-none md:rounded-none md:transition-none md:py-0 md:top-0 md:bottom-[initial] md:ml-auto`}>
