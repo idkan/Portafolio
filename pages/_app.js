@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>idkan dev 👨‍💻 | Backend, Frontend, JavaScript, Algorithms , CSS</title>
                 <meta name="description" content="Abraham SWE Portfolio" />
-                <link rel="icon" href="/devicon.png" />
+                <link rel="icon" href="/favicon.png" />
                 <meta name="description" content="Web Development, JavaScript ☕️, CSS 🎨 and Algorithms ⚡️" />
                 <meta property="og:url" content="https://idkan.dev/" />
                 <meta property="og:type" content="website" />

@@ -34,7 +34,7 @@ const PortfolioSection = () => {
                             <div className="portfolio__data">
                                 <h3 className="portfolio__title text-lg font-medium mb-2 dark:text-title-dark">{card.title}</h3>
                                 <p className="portfolio__description text-xs font-normal mb-3 dark:text-text-dark">{card.description}</p>
-                                <a href={card.link} className="button bg-primary text-white p-3 rounded-lg font-normal hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
+                                <a href={card.link} target="_blank" rel="noopener noreferrer" className="button bg-primary text-white p-3 rounded-lg font-normal hover:bg-primary-alt button--flex inline-flex items-center button--small portfolio__button group">
                                     View Project
                                     <BsArrowRight className="button__icon ml-2 group-hover:translate-x-1" />
                                 </a>
