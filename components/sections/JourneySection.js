@@ -5,31 +5,9 @@ import { FiBriefcase, FiCalendar } from "react-icons/fi";
 
 const JourneySection = () => {
 
-    const [isEducationOpen, setEducationOpen] = useState(true);
+    const [isEducationOpen, setEducationOpen] = useState(false);
 
     const myJourney = [
-        {
-            title: "Education",
-            logo: <FaGraduationCap className="qualification__icon text-3xl mr-1" />,
-            current: true,
-            isOpen: isEducationOpen,
-            data: [
-                {
-                    title: "Computer Engineering",
-                    location: "México - University",
-                    date: "2015 - 2020",
-                    position: "left",
-                    isLast: false
-                },
-                {
-                    title: "Computer Engineering",
-                    location: "Chile - University",
-                    date: "2019",
-                    position: "right",
-                    isLast: true
-                },
-            ]
-        },
         {
             title: "Work",
             logo: <FiBriefcase className="qualification__icon text-3xl mr-1" />,
@@ -57,6 +35,28 @@ const JourneySection = () => {
                     position: "right",
                     isLast: true
                 }
+            ]
+        },
+        {
+            title: "Education",
+            logo: <FaGraduationCap className="qualification__icon text-3xl mr-1" />,
+            current: true,
+            isOpen: isEducationOpen,
+            data: [
+                {
+                    title: "Computer Engineering",
+                    location: "México - University",
+                    date: "2015 - 2020",
+                    position: "left",
+                    isLast: false
+                },
+                {
+                    title: "Computer Engineering",
+                    location: "Chile - University",
+                    date: "2019",
+                    position: "right",
+                    isLast: true
+                },
             ]
         }
     ];
