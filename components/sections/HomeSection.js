@@ -9,7 +9,7 @@ const HomeSection = () => {
                     <div className="home__social grid grid-cols-[max-content] gap-y-4 lg:translate-x-[-6rem]">
                         <a href="https://www.linkedin.com/in/abraham-serena/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiLinkedin className="text-xl inline-block" /></a>
                         <a href="https://github.com/idkan/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiGithub className="text-xl inline-block" /></a>
-                        <a href="https://www.instagram.com/abraham_salk/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiInstagram className="text-xl inline-block" /></a>
+                        <a href="https://www.instagram.com/idkan.dev/" className="home__social-icon text-lg text-primary hover:text-primary-alt" target="_blank" rel="noopener noreferrer"><FiInstagram className="text-xl inline-block" /></a>
                     </div>
                     <div className="home__img sm:order-1 sm:justify-self-center">
                         <svg className="home__blob w-52 fill-primary md:w-72 lg:w-80" viewBox="0 0 200 187">

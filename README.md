@@ -10,4 +10,4 @@ In the project directory, you can run: ```npm i && npm start``` to start the dev
 
 <!-- CONTACT -->
 ## Contact
-Abraham Serena - [@idkantv](https://twitter.com/idkantv) - abraham.serena@hotmail.com
+Abraham Serena - [@idkantv](https://twitter.com/idkandev) - abraham.serena@hotmail.com

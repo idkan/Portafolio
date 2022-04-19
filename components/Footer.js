@@ -24,10 +24,10 @@ const Footer = () => {
                         <a href="https://github.com/idkan" target="_blank" rel="noopener noreferrer" className="footer__socials-item text-sm mr-6 hover:text-primary-light">
                             <FiGithub className="inline-block" />
                         </a>
-                        <a href="https://twitter.com/idkantv" target="_blank" rel="noopener noreferrer" className="footer__socials-item text-sm mr-6 hover:text-primary-light">
+                        <a href="https://twitter.com/idkandev" target="_blank" rel="noopener noreferrer" className="footer__socials-item text-sm mr-6 hover:text-primary-light">
                             <FiTwitter className="inline-block" />
                         </a>
-                        <a href="https://www.instagram.com/abraham_salk/" target="_blank" rel="noopener noreferrer" className="footer__socials-item text-sm mr-6 hover:text-primary-light">
+                        <a href="https://www.instagram.com/idkan.dev/" target="_blank" rel="noopener noreferrer" className="footer__socials-item text-sm mr-6 hover:text-primary-light">
                             <FiInstagram className="inline-block" />
                         </a>
                     </div>
