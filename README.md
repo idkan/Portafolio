@@ -1,4 +1,4 @@
-# Personal Portfolio 💼👨🏻‍💻
+# Personal Portfolio 💼👨🏻‍💻 v.1.0
 Responsive Portfolio Website Using Html, Css and JavaScript, With a beautiful user interface. It contains a Header, Home, About, Skills, Qualification, Services, Portfolio, Project in mind, Testimonial, Contact and Footer.
 
 - Desktop View 👇🏻💻
